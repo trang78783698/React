@@ -1,0 +1,92 @@
+@import '../../color/color';
+.header {
+    display: flex;
+    line-height: 50px;
+    .logo {
+        font-size: 20px;
+        width: 230px;
+        height: 50px;
+        background-color: $background_color_logo;
+        color: $color_item;
+        text-align: center;
+    }
+    a {
+        color: $color_item;
+    }
+}
+.navbar {
+    display: flex;
+    background-color: $color_primary;
+    width: calc(100% - 230px);
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    .bars-icon {
+        padding: 0 10px;
+        &:hover {
+            background-color: $background_color_logo;
+        }
+    }
+}
+.navbar-menu {
+    .menu {
+        list-style: none;
+        display: flex;
+        .item-menu {
+            position: relative;
+            padding: 0 10px;
+            a {
+                text-decoration: none;
+                color: $color_item;
+            }
+            &:hover {
+                background-color: $background_color_logo;
+            }
+        }
+        .user {
+            img {
+                width: 25px;
+                height: 25px;
+                border-radius: 100%;
+                padding: 0 10px;
+                
+            }
+            a {
+                text-decoration: none;
+                color: $color_item;
+            }
+            .user-name {
+                font-size: 14px;
+            }
+            &:hover {
+                background-color: $background_color_logo;
+            }
+        }
+        .icon-cogs {
+            padding: 0 15px;
+            &:hover {
+                background-color: $background_color_logo;
+            }
+        }
+    }
+}
+.item-menu {
+    .lable {
+        top: -12px;
+        right: 7px;
+        position: relative;
+        border-radius: 2px;
+        padding: 2px 3px;
+        font-size: 9px;
+        &-success {
+            background-color: $color_success;
+        }
+        &-warning {
+            background-color: $color_warning;
+        }
+        &-danger {
+            background-color: $color_danger;
+        }
+    }
+}

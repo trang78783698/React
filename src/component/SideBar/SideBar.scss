@@ -1,0 +1,121 @@
+@import '../../color/color';
+.sidebar{
+    background-color: $background-color_sidebar;
+    width: 230px;
+    color: $color_item;
+    .header{
+        color: $color_header;
+        padding: 0 15px;
+        font-size: 12px;
+        background-color: $background-color_header;
+    }
+}
+.user-panel {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    background-color: $background-color_sidebar;
+    img{
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        padding: 0 10px;
+    }
+    .info{
+        p{
+            font-size: 13px;
+            color: $color_item;
+            font-weight: 550;
+            margin: 5px 0;
+            line-height: 20px;
+        }
+        a{
+            display: flex;
+            margin-top: 5px;
+            font-size: 11px;
+            text-decoration: none;
+            color: $color_item;
+        }
+        .icon-online{
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: $color_success;
+            margin-right: 5px;
+            
+        }
+    }
+}
+.sidebar-form{
+    border-radius: 3px;
+    margin: 15px 10px;
+    background-color: $background-color_sidebar_form;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    .input-search{
+        background: transparent;
+        border: none;
+        font-size: 14px;
+        height: 32px;
+        width: 180px;
+    }
+    .btn-search a{
+        color: $color_button;
+    }
+}
+.sidebar-menu{
+    list-style: none;
+    background-color: $background-color_sidebar;
+    padding: 5px 10px;
+    .treeview {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 8px 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: $background-color_header;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+            color: $color_item_menu;
+            .title-item{
+                font-size: 13px;
+                margin: 0px 8px;  
+            }
+            .icon-warning{
+                border-color: $color_warning;
+            }
+            .icon-danger{
+                border-color: $color_danger;
+            }
+        }
+        .icon-left{
+            width: 20px;
+            height: 13px;
+        }
+        .label{
+            font-size: 9px;
+            font-weight: 700;
+            line-height: 1;
+            border-radius: 2px;
+            margin-right: 5px;
+            padding: 4px 6px;
+            &-primary{
+                background-color: $color_primary;
+            }
+            &-success{
+                background-color: $color_success;
+            }
+            &-warning{
+                background-color: $color_warning;
+            }
+            &-danger{
+                background-color: $color_danger;
+            }
+        }
+    }
+    
+}

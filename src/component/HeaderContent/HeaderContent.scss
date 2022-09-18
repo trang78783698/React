@@ -1,0 +1,36 @@
+@import '../../color/color';
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    .title-header{
+        font-size: 24px;
+    }
+    .advance-tables{
+        font-size: 15px;
+        padding-left: 4px;
+        font-weight: 400;
+        color: $color_advance_tables;
+    }
+}
+.breadcrumb-nav{
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    .icon-left{
+        font-size: 14px;
+        padding: 5px 5px;
+        color: $color_home;
+    }
+    .title{
+        color: $color_home;
+    }
+    .text-light{
+        color: $color_advance_tables;
+    }
+    .icon-right{
+        margin: 0 10px;
+        color: $color_advance_tables;
+    }
+}
+

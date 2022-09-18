@@ -1,0 +1,11 @@
+@import './color/color';
+body{
+    background-color: $background-color_container;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.container{
+    display: flex;
+    .content{
+        width: calc(100% - 230px);
+    }
+}
